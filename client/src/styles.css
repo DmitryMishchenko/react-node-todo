@@ -1,0 +1,27 @@
+.checkbox-field {
+    margin: 0 5px 0;
+    font-size: 0;
+}
+
+.checkbox-field span {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    position: relative;
+}
+
+.checkbox-field span svg {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35px;
+    height: 35px;
+}
+
+.checkbox-field input:checked ~ span svg {
+    display: block;
+}
