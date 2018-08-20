@@ -10,7 +10,7 @@ import {DEFAULT_DATE_FORMAT} from '../constants/dates';
 import sweetAlert from '../helpers/sweetAlert';
 import {removeTodo} from '../actions/todo';
 
-moment.locale(moment.locale(), {
+moment.updateLocale(moment.locale(), {
     week : {
         dow : 1, // Monday is the first day of the week.
     }

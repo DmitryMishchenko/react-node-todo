@@ -8,7 +8,7 @@ import Datepicker from './Datepicker';
 import SubtaskList from './SubtaskList';
 import {DEFAULT_DATE_FORMAT} from '../constants/dates';
 
-moment.locale(moment.locale(), {
+moment.updateLocale(moment.locale(), {
     week : {
         dow : 1, // Monday is the first day of the week.
     }
